@@ -1,0 +1,6 @@
+DEFAULT arch
+
+LABEL arch
+	LINUX vmlinuz-linux
+	APPEND rw nfsroot=192.168.25.1:/arch,nfsvers=4 ip=dhcp
+	INITRD initramfs-linux.img
